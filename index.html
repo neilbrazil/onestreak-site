@@ -3,133 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OneStreak: Habit Tracker</title>
-<meta name="description" content="One habit. One streak. Tap a home-screen widget to log it — no list, no second habit, nothing else competing. No account, no backend, no tracking.">
-<style>
-  :root { color-scheme: light dark; --accent: #FF452E; }
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    max-width: 42rem;
-    margin: 0 auto;
-    padding: 3.5rem 1.5rem 5rem;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background: #fff;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e8e8e8; background: #0F0F14; }
-    a { color: #ff7a68; }
-    .feature { background: #212126; border-color: #333338; }
-    footer { border-top-color: #333338; }
-  }
-  a { color: var(--accent); }
-
-  header.hero { text-align: center; margin-bottom: 3rem; }
-  .logo {
-    width: 96px;
-    height: 96px;
-    border-radius: 22px;
-    background: #0F0F14;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
-    margin: 0 auto 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    line-height: 1;
-  }
-  h1 { font-size: 1.9rem; margin: 0 0 0.4rem; }
-  .tagline { color: #767676; font-size: 1.05rem; margin: 0 0 1.75rem; }
-
-  .store-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--accent);
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 999px;
-    transition: opacity 0.15s ease;
-  }
-  .store-badge:hover { opacity: 0.88; }
-
-  h2.section-title {
-    font-size: 1.2rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  .features {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: 0.75rem;
-  }
-  .feature {
-    background: #f6f6f6;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 1rem 1.25rem;
-  }
-  .feature strong { display: block; margin-bottom: 0.2rem; }
-  .feature span { color: #767676; font-size: 0.92rem; }
-
-  footer {
-    margin-top: 4rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #e0e0e0;
-    color: #767676;
-    font-size: 0.85rem;
-  }
-  footer nav { margin-bottom: 0.5rem; }
-  footer nav a { color: inherit; text-decoration: underline; margin-right: 1.25rem; }
-</style>
+<title>OneStreak — One Habit Tracker with a Home Screen Widget</title>
+<meta name="description" content="Track a single habit and keep the streak alive by tapping a Home Screen widget once a day. No habit list, no account, works offline. Free on iPhone.">
+<link rel="canonical" href="https://neilbrazil.github.io/onestreak-site/">
+<meta name="google-site-verification" content="c2ceYkYa7YYI_VhHImzYbsitVUbdn5hZkYl3jHs13rk">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OneStreak">
+<meta property="og:title" content="OneStreak — One Habit Tracker with a Home Screen Widget">
+<meta property="og:description" content="Track a single habit and keep the streak alive by tapping a Home Screen widget once a day. No habit list, no account, works offline. Free on iPhone.">
+<meta property="og:url" content="https://neilbrazil.github.io/onestreak-site/">
+<meta property="og:image" content="https://neilbrazil.github.io/onestreak-site/assets/icon.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OneStreak — One Habit Tracker with a Home Screen Widget">
+<meta name="twitter:description" content="Track a single habit and keep the streak alive by tapping a Home Screen widget once a day. No habit list, no account, works offline. Free on iPhone.">
+<meta name="twitter:image" content="https://neilbrazil.github.io/onestreak-site/assets/icon.png">
+<meta name="theme-color" content="#0F0F14">
+<link rel="icon" type="image/png" href="/onestreak-site/assets/favicon.png">
+<link rel="apple-touch-icon" href="/onestreak-site/assets/icon.png">
+<link rel="stylesheet" href="/onestreak-site/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"OneStreak — One Habit Tracker","alternateName":"OneStreak","applicationCategory":"LifestyleApplication","operatingSystem":"iOS 18 or later","url":"https://neilbrazil.github.io/onestreak-site/","author":{"@type":"Person","name":"Neil Brazil"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free download. An optional OneStreak Pro subscription adds streak insights, the habit archive and widget styles."}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"OneStreak — One Habit Tracker","url":"https://neilbrazil.github.io/onestreak-site/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is OneStreak free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Picking a habit, logging it from the widget, your streak count and the 35-day heatmap are all free with no time limit and no ads. OneStreak Pro is an optional subscription that adds streak insights, the habit archive and widget styles."}},{"@type":"Question","name":"Can I track more than one habit?","acceptedAnswer":{"@type":"Answer","text":"No, and that is deliberate. OneStreak tracks exactly one habit. If you want a list of habits there are excellent apps for that — this one is built on the opposite bet, that a single visible streak beats a long list of good intentions."}},{"@type":"Question","name":"Do I need an account?","acceptedAnswer":{"@type":"Answer","text":"No. There is no sign-up, no login and no server. Your habit and its history are stored locally on your iPhone."}},{"@type":"Question","name":"Can I change my habit later without losing my streak?","acceptedAnswer":{"@type":"Answer","text":"You can rename your habit at any time and keep the streak and every logged day — that is free. Switching to a genuinely different habit archives the old one with its full history and starts a new streak from zero; that is part of Pro."}},{"@type":"Question","name":"What happens if I miss a day?","acceptedAnswer":{"@type":"Answer","text":"There is a same-day grace period: a streak stays alive until the day fully elapses, so you have until the end of the day to log it. Miss a whole day and the streak resets, which is the point of a streak."}},{"@type":"Question","name":"Does the widget work without opening the app?","acceptedAnswer":{"@type":"Answer","text":"Yes. The whole widget face is a button. Tapping it logs today and updates the streak without launching OneStreak at all."}},{"@type":"Question","name":"Does it work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. Everything except the optional subscription purchase works with no network connection."}}]}</script>
 </head>
 <body>
-
-<header class="hero">
-  <div class="logo" role="img" aria-label="OneStreak app icon">🔥</div>
-  <h1>OneStreak: Habit Tracker</h1>
-  <p class="tagline">One habit. One streak. No account, no backend, no tracking.</p>
-  <a class="store-badge" href="#" aria-label="Download OneStreak on the App Store">
-    Download on the App Store
-  </a>
-</header>
-
-<h2 class="section-title">Key features</h2>
-<ul class="features">
-  <li class="feature">
-    <strong>Exactly one habit</strong>
-    <span>Pick the one that matters. No list, no second habit quietly competing for your attention.</span>
-  </li>
-  <li class="feature">
-    <strong>Log with a single tap</strong>
-    <span>Tap the home-screen widget to keep the streak alive — the app never has to open.</span>
-  </li>
-  <li class="feature">
-    <strong>See your consistency</strong>
-    <span>A running streak count and a heatmap of the last five weeks.</span>
-  </li>
-  <li class="feature">
-    <strong>Change focus without losing history</strong>
-    <span>Switch habits and your past streaks are archived, not deleted.</span>
-  </li>
-</ul>
-
-<footer>
-  <nav>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Use</a>
-    <a href="mailto:neilbrazil83+apps@gmail.com">Support</a>
-  </nav>
-  OneStreak: Habit Tracker is made by Neil Brazil. Not affiliated with Apple
-  Inc. App Store is a trademark of Apple Inc.
-</footer>
-
+<link rel="preload" as="image" href="/onestreak-site/assets/icon.png"/><header class="site-head"><a class="brand" href="/onestreak-site/"><img src="/onestreak-site/assets/icon.png" alt="" width="36" height="36" class="brand-mark"/><span>OneStreak</span></a><nav class="site-nav" aria-label="Primary"><a href="/onestreak-site/#features">Features</a><a href="/onestreak-site/guides/">Guides</a><a href="/onestreak-site/#faq">FAQ</a></nav></header><main><section class="hero"><svg class="flame" viewBox="0 0 100 100" width="104" height="104" aria-hidden="true"><path fill="currentColor" d="M50 6c4 18 22 24 22 44a22 22 0 0 1-44 0c0-9 5-14 8-20 2 6 6 8 9 8-3-10 1-24 5-32z"></path></svg><h1>The habit tracker that only tracks one habit</h1><p class="lede">Pick the single habit that actually matters and keep the chain alive by tapping a Home Screen widget once a day. No list to maintain, no second habit competing for your attention.</p><span class="cta cta--pending" role="note">Coming to the App Store</span><p class="meta">Free · iOS 18+ · No account · Works offline</p></section><section id="features" class="band"><h2>What it does</h2><div class="grid"><article><h3>One habit, on purpose</h3><p>Most habit trackers hand you a list and let you add fifteen things you will abandon by Thursday. OneStreak lets you track exactly one. That constraint is the product, not a limitation.</p></article><article><h3>Log it from the Home Screen</h3><p>Tap the widget once a day. The streak goes up without the app ever opening — the fastest possible path between deciding to log and having logged.</p></article><article><h3>A chain you can see</h3><p>A 35-day heatmap shows the run you have built. Seeing an unbroken block of days is the whole psychological trick, and it is on the first screen.</p></article><article><h3>One slip does not wipe the slate</h3><p>A same-day grace period means missing today does not instantly reset months of progress. You have until the day ends to keep the streak alive.</p></article><article><h3>Rename without losing anything</h3><p>Made a typo at setup, or want to word the habit differently? Rename it any time and the streak and full history carry over untouched. That is free, not a paid feature.</p></article><article><h3>Your data stays on your device</h3><p>No account, no sign-in, no sync, no ads. Everything is stored locally on your iPhone and works with the network off.</p></article></div></section><section class="band band--alt"><h2>OneStreak Pro</h2><p class="lede">The free app is the whole core: pick a habit, tap to log, watch the streak, forever. Pro adds three things for people who want more from the history they are building.</p><ul class="ticks"><li>Streak insights — longest streak and completion rate over time</li><li>Habit archive — switch to a different habit while every past streak stays saved with its stats</li><li>Widget styles — change the widget&#x27;s accent colour</li></ul><p class="meta">$2.99 / month, or $14.99 / year with a 3-day free trial.</p></section><section class="band"><h2>Guides</h2><p class="lede">How to choose a habit worth tracking, log it without friction, and keep the streak alive when you slip.</p><ul class="links"><li><a href="/onestreak-site/guides/how-to-track-one-habit/">How to track one habit and actually stick to it</a><span>Tracking one habit beats tracking ten. Here is how to choose the habit, make logging frictionless, and keep the streak alive when motivation runs out.</span></li><li><a href="/onestreak-site/guides/habit-tracker-widget-iphone/">Using a Home Screen widget to track a habit on iPhone</a><span>An interactive iPhone widget lets you log a habit with one tap and never open the app. Here is how it works, how to add one, and why it beats reminders.</span></li><li><a href="/onestreak-site/guides/dont-break-the-chain/">Don&#x27;t break the chain: why streaks work</a><span>The &quot;don&#x27;t break the chain&quot; method turns a habit into a run of days you are reluctant to end. Here is why it works and where it goes wrong.</span></li><li><a href="/onestreak-site/guides/one-habit-vs-habit-list/">Why one habit beats a list of fifteen</a><span>Habit apps encourage you to add everything at once. Tracking a single habit is less satisfying to set up and far more likely to survive.</span></li></ul></section><section id="faq" class="band"><h2>Common questions</h2><dl class="faq"><div><dt>Is OneStreak free?</dt><dd>Yes. Picking a habit, logging it from the widget, your streak count and the 35-day heatmap are all free with no time limit and no ads. OneStreak Pro is an optional subscription that adds streak insights, the habit archive and widget styles.</dd></div><div><dt>Can I track more than one habit?</dt><dd>No, and that is deliberate. OneStreak tracks exactly one habit. If you want a list of habits there are excellent apps for that — this one is built on the opposite bet, that a single visible streak beats a long list of good intentions.</dd></div><div><dt>Do I need an account?</dt><dd>No. There is no sign-up, no login and no server. Your habit and its history are stored locally on your iPhone.</dd></div><div><dt>Can I change my habit later without losing my streak?</dt><dd>You can rename your habit at any time and keep the streak and every logged day — that is free. Switching to a genuinely different habit archives the old one with its full history and starts a new streak from zero; that is part of Pro.</dd></div><div><dt>What happens if I miss a day?</dt><dd>There is a same-day grace period: a streak stays alive until the day fully elapses, so you have until the end of the day to log it. Miss a whole day and the streak resets, which is the point of a streak.</dd></div><div><dt>Does the widget work without opening the app?</dt><dd>Yes. The whole widget face is a button. Tapping it logs today and updates the streak without launching OneStreak at all.</dd></div><div><dt>Does it work offline?</dt><dd>Yes. Everything except the optional subscription purchase works with no network connection.</dd></div></dl></section></main><footer class="site-foot"><nav aria-label="Footer"><a href="/onestreak-site/">Home</a><a href="/onestreak-site/guides/">Guides</a><a href="/onestreak-site/privacy.html">Privacy Policy</a><a href="/onestreak-site/terms.html">Terms of Use</a><a href="mailto:neilbrazil83+apps@gmail.com">Support</a></nav><p>OneStreak — One Habit Tracker is made by Neil Brazil. Not affiliated with Apple Inc. App Store is a trademark of Apple Inc.</p></footer>
 </body>
 </html>

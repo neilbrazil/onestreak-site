@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /onestreak-site/landing/
+
+Sitemap: https://neilbrazil.github.io/onestreak-site/sitemap.xml
