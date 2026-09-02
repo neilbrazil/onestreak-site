@@ -9,13 +9,12 @@ export const APP_STORE_URL =
   "https://apps.apple.com/app/apple-store/id6804715857";
 export const SUPPORT_EMAIL = "neilbrazil83+apps@gmail.com";
 
-/** OneStreak was submitted for review on 2026-08-31 and is NOT on the App
- *  Store yet, so `APP_STORE_URL` 404s. While this is false the page shows a
- *  "coming soon" note instead of a live download link, and no app-store deep
- *  link or `apple-itunes-app` banner is emitted — a crawled 404 is worse for
- *  both visitors and search than an honest placeholder.
- *  FLIP THIS TO true THE DAY THE APP IS APPROVED, then `npm run deploy`. */
-export const APP_LIVE = false;
+/** Live on the App Store since 2026-09-02. While this was false the page
+ *  showed a "coming soon" note rather than a link that 404s, and emitted no
+ *  app-store deep link or `apple-itunes-app` banner. The pre-launch path is
+ *  kept rather than deleted so the flag still works for a future app built
+ *  from this template. */
+export const APP_LIVE = true;
 
 /** Google Search Console site-verification token. Google only reads this on
  *  the verified URL, but it is emitted on every page so a re-verification

@@ -2,8 +2,8 @@ import type { ReactNode } from "react";
 import { APP } from "./data";
 import { APP_LIVE, APP_STORE_URL, SUPPORT_EMAIL, url } from "./site";
 
-/** Until the app is approved this renders as a non-link note rather than a
- *  dead App Store URL. See APP_LIVE in site.ts. */
+/** Renders the download link, or a non-link note while `APP_LIVE` is false,
+ *  so a pre-launch page never ships a URL that 404s. See site.ts. */
 export function StoreCta({ small }: { small?: boolean }) {
   const cls = small ? "cta cta--sm" : "cta";
   if (!APP_LIVE) {
